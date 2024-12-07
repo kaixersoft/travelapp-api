@@ -1,4 +1,4 @@
-import { Rating } from 'src/modules/ahp/domain/entities/ratings.entity';
+import { Rating } from '../../../ahp/domain/entities/ratings.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 
 @Entity()
