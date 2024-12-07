@@ -19,4 +19,8 @@ export class UserRepository {
     const user = this.repository.create({ email, password });
     return this.repository.save(user);
   }
+
+  async findById(id: string): Promise<User | undefined> {
+    return this.repository.findOne({ where: { id } });
+  }
 }

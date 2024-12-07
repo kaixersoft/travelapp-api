@@ -21,7 +21,8 @@
     "typeorm": "typeorm-ts-node-commonjs -d ./src/common/database/datasource/app-db-datasource.ts",
     "typeorm:migration:generate": "npm run typeorm migration:generate -n ",
     "typeorm:migration:run": "npm run typeorm migration:run",
-    "typeorm:migration:revert": "npm run typeorm migration:revert"
+    "typeorm:migration:revert": "npm run typeorm migration:revert",
+    "typeorm:seed": "npx ts-node ./src/seeder/seeder.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
@@ -35,6 +36,7 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
     "dotenv": "^16.4.5",
+    "nestjs-seeder": "^0.3.2",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "pg": "^8.13.1",
@@ -62,7 +64,7 @@
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.4.3",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.3"
   },

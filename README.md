@@ -26,6 +26,12 @@ Run Migration to create the database tables
 $ npm run typeorm:migration:run
 ```
 
+Run Seeder to pre-populate tables
+
+```bash
+$ npm run typeorm:seed
+```
+
 Copy .env.local to .env
 
 - make sure to update missing variable such as credentials
